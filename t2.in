@@ -1,0 +1,20 @@
+bool uselessFunc(int x, int y)
+{
+    return x < y;
+}
+
+override int return6()
+{
+    return 6;
+}
+
+void main() {
+    bool c = true;
+    if (not c) {
+        int x = return6();
+        printi(x);
+        x = (int) e;
+    }
+    else
+        syntax error;
+}

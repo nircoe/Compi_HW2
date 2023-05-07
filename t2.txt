@@ -1,0 +1,50 @@
+5: OverRide -> epsilon
+34: Type -> BOOL
+7: RetType -> Type
+32: Type -> INT
+13: FormalDecl -> Type ID
+32: Type -> INT
+13: FormalDecl -> Type ID
+11: FormalsList -> FormalDecl
+12: FormalsList -> FormalDecl COMMA FormalsList
+10: Formals -> FormalsList
+37: Exp -> ID
+37: Exp -> ID
+47: Exp -> Exp RELOP Exp
+22: Statement -> RETURN Exp SC
+14: Statements -> Statement
+4: FuncDecl -> OverRide RetType ID LPAREN Formals RPAREN LBRACE Statements RBRACE
+6: OverRide -> OVERRIDE
+32: Type -> INT
+7: RetType -> Type
+9: Formals -> epsilon
+39: Exp -> NUM
+22: Statement -> RETURN Exp SC
+14: Statements -> Statement
+4: FuncDecl -> OverRide RetType ID LPAREN Formals RPAREN LBRACE Statements RBRACE
+5: OverRide -> epsilon
+8: RetType ->  VOID
+9: Formals -> epsilon
+34: Type -> BOOL
+42: Exp -> TRUE
+18: Statement -> Type ID ASSIGN Exp SC
+14: Statements -> Statement
+37: Exp -> ID
+44: Exp -> NOT Exp
+32: Type -> INT
+29: Call -> ID LPAREN RPAREN
+38: Exp -> Call
+18: Statement -> Type ID ASSIGN Exp SC
+14: Statements -> Statement
+37: Exp -> ID
+30: ExpList -> Exp
+28: Call -> ID LPAREN ExpList RPAREN
+20: Statement -> Call SC
+15: Statements -> Statements Statement
+32: Type -> INT
+37: Exp -> ID
+48: Exp -> LPAREN Type RPAREN Exp
+19: Statement -> ID ASSIGN Exp SC
+15: Statements -> Statements Statement
+16: Statement -> LBRACE Statements RBRACE
+line 19: syntax error
